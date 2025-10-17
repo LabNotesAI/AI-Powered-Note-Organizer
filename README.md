@@ -34,3 +34,25 @@ This project demonstrates:
 •	Experience with data pipelines, containers, and open source tools.
 •	A focus on AI safety, privacy, and responsible use of personal data.
 •	The ability to design and iterate on a system from concept to deployment.
+
+# Running with Docker
+📂 Project Structure
+.
+├── Dockerfile        # Container build instructions
+├── watcher.py        # Main watcher script
+├── requirements.txt  # Python dependencies
+├── .env.example      # Example environment variables
+├── .gitignore        # Ignore cache, logs, secrets
+└── README.md         # Project documentation
+
+⚙️ Setup
+1. Clone the repo
+git clone https://github.com/yourusername/ai-note-watcher.git
+cd ai-note-watcher
+
+2. Configure environment
+Create a .env file (based on .env.example):
+MONGO_URI=mongodb://localhost:27017/notes
+AI_ENDPOINT=http://localhost:11434/api/generate
+MODEL_NAME=your-model-name
+
