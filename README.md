@@ -76,9 +76,23 @@ docker run -it --rm \
   ai-watcher
 ```
 
-
-#🧪 Example Workflow
+# Example Workflow
 1. Drop a .txt file into /path/to/watch
 2. The watcher detects it, sends the text to the AI model
 3. The AI returns structured JSON (title, summary, tags, content)
 4. The script inserts the structured data into MongoDB
+
+# Dependencies
+* Python 3.11 (via python:3.11-slim)
+* watchdog
+* pymongo
+* requests
+* python-dotenv
+
+# Notes
+* Make sure MongoDB is running and accessible from the container.
+* The AI endpoint must support JSON schema enforcement (tested with Ollama).
+* Logs are printed to stdout for easy monitoring
+
+# License
+MIT License
