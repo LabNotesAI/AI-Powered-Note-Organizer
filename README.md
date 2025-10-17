@@ -52,8 +52,10 @@ This project demonstrates:
    
 ```
 git clone https://github.com/yourusername/ai-note-watcher.git
-```
+
 cd ai-note-watcher
+```
+
 
 2. Configure environment
 Create a .env file (based on .env.example):
