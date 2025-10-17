@@ -77,8 +77,8 @@ docker run -it --rm \
 ```
 
 
-🧪 Example Workflow
-Drop a .txt file into /path/to/watch
-The watcher detects it, sends the text to the AI model
-The AI returns structured JSON (title, summary, tags, content)
-The script inserts the structured data into MongoDB
+#🧪 Example Workflow
+1. Drop a .txt file into /path/to/watch
+2. The watcher detects it, sends the text to the AI model
+3. The AI returns structured JSON (title, summary, tags, content)
+4. The script inserts the structured data into MongoDB
