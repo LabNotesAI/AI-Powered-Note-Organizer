@@ -37,6 +37,7 @@ This project demonstrates:
 
 # Running with Docker
 📂 Project Structure
+```
 .
 ├── Dockerfile        # Container build instructions
 ├── watcher.py        # Main watcher script
@@ -44,6 +45,7 @@ This project demonstrates:
 ├── .env.example      # Example environment variables
 ├── .gitignore        # Ignore cache, logs, secrets
 └── README.md         # Project documentation
+```
 
 ⚙️ Setup
 1. Clone the repo
