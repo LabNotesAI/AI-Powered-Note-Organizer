@@ -73,6 +73,7 @@ docker run -it --rm \
   ai-watcher
 ```
 
+
 🧪 Example Workflow
 Drop a .txt file into /path/to/watch
 The watcher detects it, sends the text to the AI model
