@@ -47,10 +47,12 @@ This project demonstrates:
 
 ⚙️ Setup
 1. Clone the repo
-git clone https://github.com/yourusername/ai-note-watcher.git
+   
+```git clone https://github.com/yourusername/ai-note-watcher.git```
+
 cd ai-note-watcher
 
-2. Configure environment
+3. Configure environment
 Create a .env file (based on .env.example):
 MONGO_URI=mongodb://localhost:27017/notes
 AI_ENDPOINT=http://localhost:11434/api/generate
