@@ -51,12 +51,30 @@ This project demonstrates:
 1. Clone the repo
    
 ```git clone https://github.com/yourusername/ai-note-watcher.git```
-
 cd ai-note-watcher
 
-3. Configure environment
+2. Configure environment
 Create a .env file (based on .env.example):
+```
 MONGO_URI=mongodb://localhost:27017/notes
 AI_ENDPOINT=http://localhost:11434/api/generate
-MODEL_NAME=your-model-name
+MODEL_NAME=your-model-name```
 
+3. Build the Docker image
+```
+docker build -t ai-watcher .
+```
+
+4. Run the container
+```
+docker run -it --rm \
+  -v /path/to/watch:/mnt/storage \
+  --env-file .env \
+  ai-watcher
+```
+
+🧪 Example Workflow
+Drop a .txt file into /path/to/watch
+The watcher detects it, sends the text to the AI model
+The AI returns structured JSON (title, summary, tags, content)
+The script inserts the structured data into MongoDB
