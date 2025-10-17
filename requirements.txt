@@ -1,0 +1,4 @@
+watchdog
+pymongo
+requests
+python-dotenv
