@@ -96,5 +96,12 @@ docker run -it --rm \
 * The AI endpoint must support JSON schema enforcement (tested with Ollama).
 * Logs are printed to stdout for easy monitoring
 
+Home Page
+![Homepage](https://github.com/user-attachments/assets/4960ca01-6a84-4df9-a1f4-84d26ab3eb6d)
+
+Document Detail Page
+![Document_Detail](https://github.com/user-attachments/assets/c2d71228-2983-459f-a33d-aeaf4af68b24)
+
+
 # License
 MIT License
